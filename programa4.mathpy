@@ -1,0 +1,37 @@
+!--------------------------------------
+! Programming Language: mathpy.py
+! Orientation: numerical calculations
+! Author: Sharif Nasser Kadamani
+! ID: A00820367
+! This a test code
+!--------------------------------------
+
+program programa4: 
+	integer :: num
+	
+	do
+		print *, "Numero:"
+		read *, num
+		if (num >=0) and (num <= 7) then
+			if num == 0 then
+				print *, "cero"
+			else if num == 1 then
+				print *, "uno"
+			else if num == 2 then
+				print *, "dos"
+			else if num == 3 then
+				print *, "tres"
+			else if num == 4 then
+				print *, "cuatro"
+			else if num == 5 then
+				print *, "cinco"
+			else if num == 6 then
+				print *, "seis"
+			else if num == 7 then
+				print *, "siete"
+			end if
+			exit
+		end if
+	end do
+
+end program

@@ -1,0 +1,72 @@
+!--------------------------------------
+! Programming Language: mathpy.py
+! Orientation: numerical calculations
+! Author: Sharif Nasser Kadamani
+! ID: A00820367
+! This a test code
+!--------------------------------------
+
+program programa3: 
+	integer :: x, y, fact, pow, exp, option, num, f, p, i
+	
+	subroutine factorial()
+		if f > 0 then
+			fact = fact * f
+			f = f - 1
+			factorial()
+		end if
+	end subroutine factorial
+
+	subroutine power()
+		do num = 1, p:
+			pow = pow * x
+		end do
+	end subroutine
+
+	subroutine exponential()
+		do y = 0, i:
+			p = y
+			f = y
+			power()
+			factorial()
+			exp = exp + (pow / fact)
+		end do
+	end subroutine 
+
+	print *, "Menu:"
+	print *, "1)_Leer_X_y_calcular_X!"
+	print *, "2)_Leer_X_Y_y_calcular_X_y"
+	print *, "3)_Leer_X_y_calcular_e_X_bajo_la_sumatoria_de_Taylor"
+
+	read *, option
+
+	if option == 1 then
+		fact = 1
+		print *, "X:"
+		read *, x
+		f  = x
+		factorial()
+		print *, fact
+
+	else if option == 2 then
+		pow = 1
+		print *, "X:"
+		read *, x
+		print *, "Y:"
+		read *, y
+		p = y
+		power()
+		print *, pow
+
+	else if option == 3 then
+		pow = 1
+		fact = 1
+		exp = 0
+		print *, "X:"
+		read *, x
+		i = 10
+		exponential()
+		print *, exp
+	end if
+
+end program

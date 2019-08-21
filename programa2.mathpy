@@ -1,0 +1,46 @@
+!--------------------------------------
+! Programming Language: mathpy.py
+! Orientation: numerical calculations
+! Author: Sharif Nasser Kadamani
+! ID: A00820367
+! This a test code
+!--------------------------------------
+
+program programa2: 
+	integer :: v(10), dim, i, j, k, aux, aux_2, aux1, aux2
+
+	print *, "Dimension:"
+	read *, dim
+
+	v(0) = 100
+	v(1) = 90
+	v(2) = 80
+	v(3) = 70
+	v(4) = 60
+	v(5) = 50
+	v(6) = 40
+	v(7) = 30
+	v(8) = 20
+	v(9) = 10
+
+	aux = dim - 2
+
+	do i = 1, aux:
+		aux_2 = dim - i - 2
+		do j = 1, aux_2:
+			k = j + 1
+			aux1 = v(j)
+			aux2 = v(k)
+			if (aux2 < aux1) then
+				v(j) = aux1
+				v(k) = aux2
+			end if
+		end do
+	end do
+
+	aux = dim - 1
+	do i = 0, aux:
+		print *, v(i)
+	end do
+
+end program

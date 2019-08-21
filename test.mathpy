@@ -1,0 +1,24 @@
+!--------------------------------------
+! Programming Language: mathpy.py
+! Orientation: numerical calculations
+! Author: Sharif Nasser Kadamani
+! ID: A00820367
+! This a test code
+!--------------------------------------
+
+! This is a comment
+! Below there is an example program written in mathpy
+! It is supposed to read dimensions of two matrices y verify if it is possible to sum them up
+
+program exampleMatrix: 
+	integer :: a, b, c, d(2,2), e(4)
+
+	subroutine abc()
+		a = b + c
+	end subroutine abc
+
+	! The real example code starts here	
+
+	e(3) = d(a,b)
+
+end program exampleMatrix

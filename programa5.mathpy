@@ -1,0 +1,29 @@
+!--------------------------------------	
+! Programming Language: mathpy.py
+! Orientation: numerical calculations
+! Author: Sharif Nasser Kadamani
+! ID: A00820367
+! This a test code
+!--------------------------------------
+
+program programa5: 
+	integer :: num, fact
+
+	subroutine factorial()
+		if num > 0 then
+			fact = fact * num
+			num = num - 1
+			print *, fact
+			factorial()
+		end if
+	end subroutine factorial
+
+	fact = 1
+
+	read *, num
+
+	factorial()
+
+	print *, fact
+
+end program
